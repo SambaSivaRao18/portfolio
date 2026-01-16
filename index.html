@@ -5,8 +5,23 @@
   <meta charset="UTF-8" />
   <title>Samba | Cybersecurity Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      style-src 'self' 'unsafe-inline'
+        https://fonts.googleapis.com
+        https://cdnjs.cloudflare.com
+        https://unpkg.com;
+      font-src 'self'
+        https://fonts.gstatic.com
+        https://cdnjs.cloudflare.com;
+      script-src 'self'
+        https://cdnjs.cloudflare.com
+        https://unpkg.com;
+      img-src 'self' data:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description"
     content="Cybersecurity Specialist Portfolio - Vulnerability Assessment, Malware Analysis, Secure Tool Development">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="assets/style.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +100,7 @@
         <!-- SOCIAL ICONS -->
         <div class="hero-socials">
           <!-- EMAIL -->
-          <a href="mailto:sambayadav12@email.com" aria-label="Email">
+          <a href="javascript:void(0)" class="dynamic-email-link" aria-label="Email">
             <i class="fa-solid fa-envelope"></i>
           </a>
 
@@ -157,14 +172,6 @@
         <!-- INFO CARDS -->
         <div class="info-grid">
           <div class="info-card">
-            <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
-            <div>
-              <small>LOCATION</small>
-              <strong>Guntur(Dis), AP in India</strong>
-            </div>
-          </div>
-
-          <div class="info-card">
             <span class="info-icon"><i class="fas fa-graduation-cap"></i></span>
             <div>
               <small>EDUCATION</small>
@@ -176,7 +183,7 @@
             <span class="info-icon"><i class="fas fa-envelope"></i></span>
             <div>
               <small>EMAIL</small>
-              <strong>sambayadav121@email.com</strong>
+              <strong class="dynamic-email-text"></strong>
             </div>
           </div>
 
@@ -184,7 +191,15 @@
             <span class="info-icon"><i class="fas fa-phone"></i></span>
             <div>
               <small>PHONE</small>
-              <strong>+91 6302463508</strong>
+              <strong class="dynamic-phone-text"></strong>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+            <div>
+              <small>LOCATION</small>
+              <strong>Guntur(Dis), AP in India</strong>
             </div>
           </div>
         </div>
@@ -198,7 +213,7 @@
     <div class="stats-card">
 
       <div class="stat-item">
-        <div class="stat-number">2</div>
+        <div class="stat-number">3</div>
         <div class="stat-label">Projects</div>
       </div>
 
@@ -369,14 +384,16 @@
       <span class="tool-pill">Wireshark</span>
       <span class="tool-pill">Hydra</span>
       <span class="tool-pill">OWASP ZAP</span>
-      <span class="tool-pill">TheHavester</span>
+      <span class="tool-pill">theHavester</span>
       <span class="tool-pill">Recon-NG</span>
       <span class="tool-pill">subfinder</span>
       <span class="tool-pill">ExploitDB</span>
-      <span class="tool-pill">Jhon The Ripper</span>
+      <span class="tool-pill">John the Ripper</span>
       <span class="tool-pill">HashCat</span>
       <span class="tool-pill">MobSF</span>
-      <span class="tool-pill">Mfvenom</span>
+      <span class="tool-pill">Msfvenom</span>
+      <span class="tool-pill">Social-Engineer Toolkit (SET)</span>
+      <span class="tool-pill">Gophish</span>
     </div>
   </section>
 
@@ -385,7 +402,7 @@
   <!-- PROJECTS -->
   <section id="projects" class="projects">
     <div class="projects-header">
-      <h1>Complited <span>Projects</span></h1>
+      <h1>Completed <span>Projects</span></h1>
       <p>
         Security tools, automation, and research projects that
         demonstrate my hands-on approach to cybersecurity.
@@ -464,12 +481,36 @@
         </div>
       </div>
 
+      <!--Project card 3-->
+      <div class="project-card">
+        <div class="project-icon orange">🕵🏼‍♂️</div>
+
+        <h3> Keylogger Prototype</h3>
+        <p class="description">
+          Security research prototype exploring keystroke interception methods
+          in a controlled environment to better understand common attack vectors
+          and support the development of defensive security practices.
+        </p>
+
+        <ul class="features">
+          <li class="note-dot">Developed strictly for educational and defensive research purposes, not deployed in real world environments.</li>
+          <li>Analysis of keystroke capture techniques and corresponding defensive countermeasures.</li>
+          <li>Security-focused research aimed at identifying and mitigating malicious input capture techniques.</li>
+        </ul>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>pynput</span>
+          <span>Security Research</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!--futucr projects-->
   <section class="future-projects">
-    <h2 class="section-title">Upcomming <span>Projects</span></h2>
+    <h2 class="section-title">Upcoming <span>Projects</span></h2>
 
     <div class="projects-grid">
 
@@ -716,7 +757,7 @@
           <span class="icon"><i class="fas fa-envelope"></i></span>
           <div>
             <small>Email</small>
-            <p>sambayadav121@gmail.com</p>
+            <p class="dynamic-email-text"></p>
           </div>
         </div>
 
@@ -724,7 +765,7 @@
           <span class="icon"><i class="fas fa-phone"></i></span>
           <div>
             <small>Phone</small>
-            <p>+91 6302463508</p>
+            <p class="dynamic-phone-text"></p>
           </div>
         </div>
 
@@ -827,9 +868,9 @@
                 class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/samba-siva-rao-12linked" target="_blank" class="social-box"><i
                 class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:sambayadav121@email.com" class="social-box"><i class="far fa-envelope"></i></a>
+            <a href="javascript:void(0)" class="social-box dynamic-email-link"><i class="far fa-envelope"></i></a>
           </div>
-          <p class="footer-email">sambayadav121@gmail.com</p>
+          <p class="footer-email dynamic-email-text"></p>
         </div>
       </div>
 

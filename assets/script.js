@@ -89,11 +89,12 @@ gsap.utils.toArray('.skill-bar span').forEach(bar => {
 // Smooth Scroll (Native is already set in CSS, but GSAP can enhance it)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
     const targetId = this.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
+    if (!targetId || !targetId.startsWith('#')) return;
 
+    const targetElement = document.querySelector(targetId);
     if (targetElement) {
+      e.preventDefault();
       window.scrollTo({
         top: targetElement.offsetTop - 80, // Offset for navbar
         behavior: 'smooth'
@@ -172,4 +173,18 @@ document.addEventListener('DOMContentLoaded', () => {
     maxSpeed: 60,
     icons: ['shield-halved', 'lock', 'ghost', 'code', 'terminal', 'user-shield', 'microchip', 'database']
   });
+
+  // Personal Info Obfuscation (Bot Protection)
+  const user = "sambayadav121";
+  const domain = "gmail.com";
+  const emailAddr = user + "@" + domain;
+  const phoneNum = "+91 6302463508";
+
+  // Populate Email
+  document.querySelectorAll('.dynamic-email-text').forEach(el => el.innerText = emailAddr);
+  document.querySelectorAll('.dynamic-email-link').forEach(el => el.href = "mailto:" + emailAddr);
+
+  // Populate Phone
+  document.querySelectorAll('.dynamic-phone-text').forEach(el => el.innerText = phoneNum);
+  document.querySelectorAll('.dynamic-phone-link').forEach(el => el.href = "tel:" + phoneNum.replace(/\s/g, ''));
 });
