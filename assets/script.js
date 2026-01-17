@@ -188,3 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.dynamic-phone-text').forEach(el => el.innerText = phoneNum);
   document.querySelectorAll('.dynamic-phone-link').forEach(el => el.href = "tel:" + phoneNum.replace(/\s/g, ''));
 });
+
+// Disable right click
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
