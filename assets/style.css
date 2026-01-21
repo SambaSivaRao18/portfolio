@@ -860,7 +860,7 @@ section {
 }
 
 .tools-section {
-  margin-top: rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -1044,7 +1044,7 @@ section {
 }
 
 /* =========================================
-   fuctur projects
+   fuctue projects
    ========================================= */
 
 .future-projects {
@@ -1230,11 +1230,11 @@ section {
 }
 
 .timeline-item.left .meta {
-  justify-content: flex-end;
+  justify-content: flex;
 }
 
 .timeline-item.left .skills {
-  justify-content: flex-end;
+  justify-content: flex;
 }
 
 .exp-card:hover {
@@ -1300,6 +1300,17 @@ section {
   border: 1px solid var(--glass-border);
   border-radius: 4px;
   color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .meta {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  .timeline-item.left .meta {
+    justify-content: flex-start;
+  }
 }
 
 
