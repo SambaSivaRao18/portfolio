@@ -1209,6 +1209,7 @@ section {
 }
 
 .exp-card {
+  width: 450px;
   background: var(--bg-card);
   padding: 2rem;
   text-align: left;
