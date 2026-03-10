@@ -151,26 +151,20 @@
 
       <!-- RIGHT : CONTENT -->
       <div class="about-content">
+        <p class="about-text">I’m Samba Siva Rao, a passionate Cyber security student focused on learning
+          ethical hacking, web application security, and real-world threat analysis.
+        </p>
         <p class="about-text">
-          I'm a <span class="highlight">cybersecurity student</span> at
-          <a href="https://www.pscmr.ac.in/" target="_blank"> Potti Sriramulu College</a>, Vijayawada, with a passion
-          for understanding how systems break and how to protect them.
+          Cybersecurity Professional specializing in Web Application Penetration Testing (VAPT). I have deep technical
+          knowledge in identifying and exploiting OWASP Top 10 vulnerabilities such as Injection (SQLi, XSS), Broken
+          Access Control (IDOR), Security Misconfigurations and Insecure Deserialization.
+          With a 'break-and-patch' mindset, I utilize industry-standard tools like Burp Suite, Nikto, Nmap, Gobuster and
+          Metasploit to secure complex web architectures. I utilize Python to develop custom security automation tools.
         </p>
 
         <p class="about-text">
-          My journey into security started with curiosity about how hackers
-          think. Now I spend my time conducting
-          <span class="blue">malware analysis</span>,
-          building <span class="green">secure Python tools</span>, and
-          performing <span class="blue">web Vulnerability testing</span>
-          for clients.
-        </p>
-
-        <p class="about-text">
-          My work focuses on learning by doing testing, breaking, and patching
-          rather than just memorizing theory. Whether it's analyzing malware
-          samples, scanning for vulnerabilities, or building security tools,
-          I approach every challenge with hands-on intensity.
+          Alongside cybersecurity, I enjoy coding in Python. I’ve completed a Python certification and built several
+          small projects involving automation and security tools.
         </p>
 
         <!-- INFO CARDS -->
@@ -408,7 +402,53 @@
 
     <div class="projects-grid">
 
-      <!-- Project Card 1 -->
+      <!-- Project Card 1 (TGCSB VAPT) -->
+      <div class="project-card">
+        <div class="project-icon" style="background: linear-gradient(135deg, #ef4444, #b91c1c);">🛡️</div>
+
+        <h3>Comprehensive Web VAPT</h3>
+
+        <a href="assets/projects/Report.pdf#toolbar=0" target="_blank" class="pdf-drive-card"
+          style="text-decoration: none;">
+          <div class="pdf-drive-header">
+            <div class="pdf-drive-title">
+              <i class="fas fa-file-pdf"></i>
+              <span>Report.pdf</span>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="pdf-drive-body">
+            <img src="assets/projects/TGCSB.png" alt="TGCSB VAPT Report Sample">
+          </div>
+        </a>
+
+        <p class="description">
+          Conducted a full-lifecycle Vulnerability Assessment and Penetration Testing (VAPT) on a target web application
+          in a TGCSB lab environment. I explicitly prioritized an intensive, manual testing methodology instead of
+          relying on automated vulnerability scanning, enabling much deeper exploitation and discovery of complex logic
+          flaws.
+        </p>
+
+        <ul class="features">
+          <li><strong>Reconnaissance:</strong> Mapped surfaces and endpoints manually using Nmap, Nikto, and Gobuster.
+          </li>
+          <li><strong>Exploitation:</strong> Manually validated complex attacks like SQLi, XSS, IDOR, and Insecure File
+            Uploads.</li>
+          <li><strong>Traffic Analysis:</strong> Intercepted and modified HTTP/S traffic to identify authentication
+            bypasses.</li>
+          <li><strong>Reporting:</strong> Authored audit reports with root cause analysis and patch recommendations.
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span>VAPT</span>
+          <span>Manual Pentesting</span>
+          <span>Burp Suite</span>
+          <span>OWASP Top 10</span>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
       <div class="project-card">
         <div class="project-links">
           <a href="https://github.com/SambaSivaRao18/File_secure" target="_blank" class="project-link"
@@ -424,17 +464,22 @@
         <div class="project-icon blue">≡</div>
 
         <h3> Secure File Encryption</h3>
+        <img src="assets/projects/encyption.png" alt="Secure File Encryption" class="project-thumb">
         <p class="description">
-          Built a secure file encryption and decryption tool to protect sensitive data
-          from unauthorized access and system compromise. The application
-          encrypts files using strong cryptographic algorithms and allows safe decryption
-          only with valid credentials or keys.
+          Build a secure file encryption and decryption tool designed to protect sensitive data from unauthorized
+          access The application utilizes strong cryptographic algorithms (AES-256) to
+          securely
+          encrypt files. <br>
+          Encryption keys are securely stored and managed within the operating system kernel, ensuring enhanced
+          protection
+          against unauthorized access and potential key compromise.
         </p>
 
         <ul class="features">
           <li>Ensures data confidentiality even if a system is compromised</li>
           <li>Protects sensitive data against system breaches</li>
-          <li>Encrypts and decrypts files using strong cryptographic techniques</li>
+          <li>Implements robust cryptographic techniques for secure file encryption and decryption</li>
+          <li>Strengthens the overall security architecture by integrating secure key storage within the OS kernel.</li>
         </ul>
 
         <div class="tags">
@@ -457,6 +502,7 @@
         <div class="project-icon green">&gt;_</div>
 
         <h3>IoT-Based Waste Collection Vehicle</h3>
+        <img src="assets/projects/iot.jpg" alt="IoT Waste Collection Vehicle" class="project-thumb">
         <p class="description">
           Designed and implemented a smart waste collection vehicle controlled
           via a Bluetooth-enabled mobile application. The system integrates ESP32
@@ -464,10 +510,11 @@
         </p>
 
         <ul class="features">
-          <li>Sensor-driven automation</li>
-          <li>Embedded system communication</li>
-          <li>Practical IoT hardware integration</li>
-          <li>Bluetooth-based remote control</li>
+          <li>SensorUtilized sensor-driven automation to detect and respond to environmental conditions.</li>
+          <li>Integrated ESP32 and Arduino Uno for efficient embedded system communication and processing</li>
+          <li>Showcased the use of microcontrollers, sensors, and IoT communication protocols in a real-world system.
+          </li>
+          <li>Implemented Bluetooth-based remote control for wireless operation via a mobile application.</li>
         </ul>
 
         <div class="tags">
@@ -502,6 +549,8 @@
           <span>Security Research</span>
         </div>
       </div>
+
+
 
     </div>
   </section>
@@ -565,8 +614,10 @@
 
         <div class="exp-card">
           <span class="role-tag">Internship</span>
-          <h3>Offensive Security Intern</h3>
-          <h4>Telangana Cyber Security Bureau (TGCSB)</h4>
+          <h3><img src="assets/TGCSB.png" alt="TGCSB Logo"
+              style="width: 40px; height: 40px; vertical-align: middle; margin-right: 12px; border-radius: 4px;">Telangana
+            Cyber Security Bureau (TGCSB)</h3>
+          <h4>Role Offensive Security Analysis</h4>
 
           <div class="meta">
             <span>📅 jan 2026 – Mar 2026</span>
@@ -574,19 +625,22 @@
           </div>
 
           <p class="summary">
-           At TGCSB, I gained deep operational exposure to both offensive security 
-           and the investigative frameworks of law enforcement, understand the real-world tactics used to combat cybercrime.
+            At TGCSB, I gained deep operational exposure to both offensive security
+            and the investigative frameworks of law enforcement, understand the real-world tactics used to combat
+            cybercrime.
           </p>
 
           <ul>
-            <li><strong>Operational Investigations:</strong> Gained hands-on experience with the workflows of the 
+            <li><strong>Operational Investigations:</strong> Gained hands-on experience with the workflows of the
               1930 Cybercrime Helpline and the National Cyber Crime Reporting Portal (NCRP).
             </li>
-            <li><strong>Technical Fraud Handling:</strong> Assisted in the technical analysis and identifying attack patterns and 
+            <li><strong>Technical Fraud Handling:</strong> Assisted in the technical analysis and identifying attack
+              patterns and
               digital footprints left by threat actors.
             </li>
             <li><strong>Web VAPT & Offensive Security:</strong> Security assessments in a controlled lab environment,
-               manually identifying and validating OWASP Top 10 vulnerabilities (SQLi, XSS, IDOR) using Burp Suite and Metasploit.</li>
+              manually identifying and validating OWASP Top 10 vulnerabilities (SQLi, XSS, IDOR) using Burp Suite and
+              Metasploit.</li>
           </ul>
 
           <div class="skills">
@@ -605,8 +659,10 @@
 
         <div class="exp-card">
           <span class="role-tag">Internship</span>
-          <h3>Malware Analysis Intern</h3>
-          <h4>SpyPro Solution Pvt. Ltd</h4>
+          <h3><img src="assets/spypro.png" alt="SpyPro Logo"
+              style="width: 40px; height: 40px; vertical-align: middle; margin-right: 12px; border-radius: 4px;">SpyPro
+            Solution Pvt. Ltd</h3>
+          <h4>Role Malware Analysis</h4>
 
           <div class="meta">
             <span>📅 May 2025 – June 2025</span>
@@ -642,8 +698,10 @@
 
         <div class="exp-card">
           <span class="role-tag green">Internship</span>
-          <h3>Cybersecurity Intern</h3>
-          <h4>InternCertify (The Website Makers)</h4>
+          <h3><img src="assets/inter.png" alt="InternCertify Logo"
+              style="width: 40px; height: 40px; vertical-align: middle; margin-right: 12px; border-radius: 4px;">InternCertify
+            (The Website Makers)</h3>
+          <h4>Role Web Penetration Testing </h4>
 
           <div class="meta">
             <span>📅 Jan 2025 – Apr 2025</span>
@@ -689,37 +747,54 @@
 
     <div class="cert-grid">
 
-      <!-- Certificate 1 -->
-      <div class="cert-card">
+      <!-- Certificate 1 (Sturtle Security - JWAP Tester) -->
+      <a href="https://sturtles.in/?page=verify-certificate" class="cert-card"
+        style="cursor: pointer; text-decoration: none;">
+        <div class="cert-icon"
+          style="background: linear-gradient(135deg, #0ea5e9, #0369a1); color: #fff; width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0;">
+          <i class="fas fa-bug"></i>
+        </div>
+
+        <div class="cert-content">
+          <h3>Jr. Web App Penetration Tester</h3>
+          <h4>Sturtle Security Pvt. Ltd.</h4>
+          <p>Certified Junior Web Application Penetration Tester — ID: ECR-01629</p>
+        </div>
+
+        <span class="verified"><i class="fas fa-check-circle"></i></span>
+      </a>
+
+      <!-- Certificate 2 (Cisco) -->
+      <a href="https://www.credly.com/badges/ed3ab4d7-7268-4a6d-89d1-a07952524d5a" class="cert-card"
+        style="cursor: pointer; text-decoration: none;">
         <div class="cert-icon blue">
           <i class="fas fa-shield-alt"></i>
         </div>
 
         <div class="cert-content">
           <h3>Ethical Hacker</h3>
-          <h4><a href="https://www.credly.com/badges/ed3ab4d7-7268-4a6d-89d1-a07952524d5a" target="_blank">Cisco</a>
-          </h4>
+          <h4>Cisco</h4>
           <p>Comprehensive ethical hacking and penetration testing certification</p>
         </div>
 
         <span class="verified"><i class="fas fa-check-circle"></i></span>
-      </div>
+      </a>
 
       <!-- Certificate 2 -->
-      <div class="cert-card">
+      <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS142S97210148010810498/" class="cert-card"
+        style="cursor: pointer; text-decoration: none;">
         <div class="cert-icon green">
           <i class="fas fa-scroll"></i>
         </div>
 
         <div class="cert-content">
           <h3>NPTEL Certificate</h3>
-          <h4><a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS142S97210148010810498/"
-              target="_blank">NPTEL</a></h4>
+          <h4>NPTEL</h4>
           <p>National Programme on Technology Enhanced Learning certification</p>
         </div>
 
         <span class="verified"><i class="fas fa-check-circle"></i></span>
-      </div>
+      </a>
 
       <!-- Certificate 3 -->
       <div class="cert-card">
@@ -737,51 +812,38 @@
       </div>
 
       <!-- Certificate 4 -->
-      <div class="cert-card">
+      <a href="https://interncertify.com/a1-verified-certificate-original-samba-siva-rao/" class="cert-card"
+        style="cursor: pointer; text-decoration: none;">
         <div class="cert-icon orange">
           <i class="fas fa-lock"></i>
         </div>
 
         <div class="cert-content">
           <h3>Cybersecurity Internship</h3>
-          <h4><a href="https://interncertify.com/a1-verified-certificate-original-samba-siva-rao/"
-              target="_blank">InternCertify</a></h4>
+          <h4>InternCertify</h4>
           <p>Practical cybersecurity and vulnerability assessment certification</p>
         </div>
 
         <span class="verified"><i class="fas fa-check-circle"></i></span>
-      </div>
+      </a>
 
       <!-- Certificate 5 -->
-      <div class="cert-card">
+      <a href="https://web.certificate.wfglobal.org/en/certificate?certificateId=694c102ce148b98d90046744"
+        class="cert-card" style="cursor: pointer; text-decoration: none;">
         <div class="cert-icon purple">
           <i class="fas fa-user-graduate"></i>
         </div>
 
         <div class="cert-content">
           <h3>Wadhwani</h3>
-          <h4><a href="https://web.certificate.wfglobal.org/en/certificate?certificateId=694c102ce148b98d90046744"
-              target="_blank">Wadhwani</a></h4>
+          <h4>Wadhwani</h4>
           <p>Acquired essential concepts related to the employability curriculum.</p>
         </div>
 
         <span class="verified"><i class="fas fa-check-circle"></i></span>
-      </div>
+      </a>
 
-      <!-- Certificate 6 -->
-      <div class="cert-card">
-        <div class="cert-icon red">
-          <i class="fas fa-trophy"></i>
-        </div>
 
-        <div class="cert-content">
-          <h3>CyberWarLab Internship</h3>
-          <h4>CyberWarLab</h4>
-          <p>Offensive Security & VAPT with 2nd place achievement in CTF Challenge</p>
-        </div>
-
-        <span class="verified"><i class="fas fa-check-circle"></i></span>
-      </div>
 
     </div>
   </section>
